@@ -17,7 +17,7 @@ def surface_of_circle(radius):
 
 def cube_volume(length, width, height):
     ''' Returns the volume of the cube '''
-    return 0
+    return length*width*height
 
 def usd_to_chf(usd):
     ''' Fetches the current exchange rate and converts to swiss francs '''
@@ -32,7 +32,7 @@ def usd_to_chf(usd):
 
 def lessons_to_minutes(lessons):
     ''' Returns the amount of minutes spent in lessons '''
-    return 0
+    return 45*lessons
 
 def mwst(amount):
     ''' This returns the amount of tax (mwst) on a given amount. Watch out, the amount already
