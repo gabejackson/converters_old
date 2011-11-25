@@ -13,7 +13,10 @@ def fahrenheit_to_celsius(degrees):
 def surface_of_circle(radius):
     ''' Calculates the surface of a circle. Hint: Use pow(x, exponent) for power '''
     from math import pi
-    return 0
+    x = radius**2
+    y = x*pi
+    return y
+    
 
 def cube_volume(length, width, height):
     ''' Returns the volume of the cube '''
@@ -55,7 +58,10 @@ def distance_between_points(x1, x2):
     return sqrt(x12[0]**2 + x12[1]**2)
 
 def cat_and_dog_speech(animal):
-    return ''
+    if animal=='katze':
+        return 'miau'
+    if animal=='hund':
+        return 'wuff'
 
 def element_in_list(element, list):
     ''' Checks if an element is in a list and returns True if so,
