@@ -54,7 +54,10 @@ def distance_between_points(x1, x2):
     return 0
 
 def cat_and_dog_speech(animal):
-    return ''
+    if animal=='katze':
+        return 'miau'
+    if animal=='hund':
+        return 'wuff'
 
 def element_in_list(element, list):
     ''' Checks if an element is in a list and returns True if so,
