@@ -4,11 +4,11 @@ def days_to_seconds(days):
 
 def celsius_to_fahrenheit(degrees):
     ''' Converts degrees Celsius to degrees Fahrenheit '''
-    return 0
+    return degrees*1.8 + 32
 
 def fahrenheit_to_celsius(degrees):
     ''' Converts degrees Fahrenheit to degrees Celsius '''
-    return 0
+    return (degrees-32)/1.8
 
 def surface_of_circle(radius):
     ''' Calculates the surface of a circle. Hint: Use pow(x, exponent) for power '''
