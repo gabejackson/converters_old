@@ -28,7 +28,7 @@ def usd_to_chf(usd):
     f = opener.open(req)
     data = json.loads(f.read())
     exchange_rate = data['rates']['CHF']
-    return 0
+    return exchange_rate*usd
 
 def lessons_to_minutes(lessons):
     ''' Returns the amount of minutes spent in lessons '''
