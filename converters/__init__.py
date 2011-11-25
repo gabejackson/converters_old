@@ -37,7 +37,8 @@ def lessons_to_minutes(lessons):
 def mwst(amount):
     ''' This returns the amount of tax (mwst) on a given amount. Watch out, the amount already
     includes the tax! '''
-    return 0
+    return amount-amount/108*100
+
 
 def joules_to_calories(joules):
     ''' Converts joules to calories '''
