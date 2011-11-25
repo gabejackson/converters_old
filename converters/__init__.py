@@ -1,6 +1,6 @@
 def days_to_seconds(days):
     ''' This function converts days to seconds '''
-    return 0
+    return days*24*60*60
 
 def celsius_to_fahrenheit(degrees):
     ''' Converts degrees Celsius to degrees Fahrenheit '''
