@@ -17,7 +17,7 @@ def surface_of_circle(radius):
 
 def cube_volume(length, width, height):
     ''' Returns the volume of the cube '''
-    return length*width*height
+    return 0
 
 def usd_to_chf(usd):
     ''' Fetches the current exchange rate and converts to swiss francs '''
@@ -28,11 +28,11 @@ def usd_to_chf(usd):
     f = opener.open(req)
     data = json.loads(f.read())
     exchange_rate = data['rates']['CHF']
-    return exchange_rate*usd
+    return 0
 
 def lessons_to_minutes(lessons):
     ''' Returns the amount of minutes spent in lessons '''
-    return 45*lessons
+    return 0
 
 def mwst(amount):
     ''' This returns the amount of tax (mwst) on a given amount. Watch out, the amount already
@@ -44,7 +44,7 @@ def joules_to_calories(joules):
     return 0
 
 def kmh_to_mph(kmh):
-    return 0
+    return kmh/100*62.137
 
 def distance_between_points(x1, x2):
     ''' Returns the distance between the points x1 and x2.
