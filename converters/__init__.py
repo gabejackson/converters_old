@@ -60,4 +60,6 @@ def element_in_list(element, list):
     ''' Checks if an element is in a list and returns True if so,
     otherwise False
     '''
+    if element in list:
+        return True
     return False
