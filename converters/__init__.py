@@ -32,7 +32,7 @@ def usd_to_chf(usd):
 
 def lessons_to_minutes(lessons):
     ''' Returns the amount of minutes spent in lessons '''
-    return 0
+    return 45*lessons
 
 def mwst(amount):
     ''' This returns the amount of tax (mwst) on a given amount. Watch out, the amount already
