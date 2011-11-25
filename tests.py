@@ -28,6 +28,9 @@ class TestConverters(unittest.TestCase):
     def test_usd_to_chf(self):
         self.assertAlmostEqual(0.917, usd_to_chf(1), places=1)
 
+    def test_lessons_to_minutes(self):
+        self.assertEquals(135, lessons_to_minutes(3))
+
     def test_mwst(self):
         self.assertAlmostEqual(39.42-36.50, mwst(39.42), places=2)
 
@@ -48,6 +51,10 @@ class TestConverters(unittest.TestCase):
     def test_element_in_list(self):
         self.assertTrue(element_in_list('purple', ['blue', 'purple', 'pink']))
         self.assertFalse(element_in_list('yellow', ['blue', 'purple', 'pink']))
+
+    def surface_of_triangle(grundseite, heohe):
+        self.assertTrue(100, surface_of_triangle(10,10))
+        self.assertFalse(1234,surface_of_triangle(4,5))
 
 if __name__ == '__main__':
     unittest.main()
