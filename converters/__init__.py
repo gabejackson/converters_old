@@ -4,11 +4,11 @@ def days_to_seconds(days):
 
 def celsius_to_fahrenheit(degrees):
     ''' Converts degrees Celsius to degrees Fahrenheit '''
-    return 0
+    return degrees*1.8 + 32
 
 def fahrenheit_to_celsius(degrees):
     ''' Converts degrees Fahrenheit to degrees Celsius '''
-    return 0
+    return (degrees-32)/1.8
 
 def surface_of_circle(radius):
     ''' Calculates the surface of a circle. Hint: Use pow(x, exponent) for power '''
@@ -20,7 +20,7 @@ def surface_of_circle(radius):
 
 def cube_volume(length, width, height):
     ''' Returns the volume of the cube '''
-    return 0
+    return length*width*height
 
 def usd_to_chf(usd):
     ''' Fetches the current exchange rate and converts to swiss francs '''
@@ -31,11 +31,11 @@ def usd_to_chf(usd):
     f = opener.open(req)
     data = json.loads(f.read())
     exchange_rate = data['rates']['CHF']
-    return 0
+    return exchange_rate*usd
 
 def lessons_to_minutes(lessons):
     ''' Returns the amount of minutes spent in lessons '''
-    return 0
+    return 45*lessons
 
 def mwst(amount):
     ''' This returns the amount of tax (mwst) on a given amount. Watch out, the amount already
@@ -44,7 +44,7 @@ def mwst(amount):
 
 def joules_to_calories(joules):
     ''' Converts joules to calories '''
-    return 0
+    return joules*0.239005736
 
 def kmh_to_mph(kmh):
     return 0
