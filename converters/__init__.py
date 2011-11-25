@@ -51,7 +51,8 @@ def distance_between_points(x1, x2):
     The points are tuples (1,5). sqrt() is the root, pow(x, exponent) is the power
     '''
     from math import sqrt
-    return 0
+    x12 = (x2[0] - x1[0], x2[1] - x1[1]) 
+    return sqrt(x12[0]**2 + x12[1]**2)
 
 def cat_and_dog_speech(animal):
     return ''
