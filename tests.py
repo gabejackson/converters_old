@@ -45,16 +45,16 @@ class TestConverters(unittest.TestCase):
         self.assertAlmostEqual(sqrt(18), distance_between_points((1,2), (4,5)), places=1)
 
     def test_cat_and_dog_speech(self):
-        self.assertEquals('miau', cat_and_dog_speech('katze'))
-        self.assertEquals('wuff', cat_and_dog_speech('hund'))
+        self.assertEqual('miau', cat_and_dog_speech('katze'))
+        self.assertEqual('wuff', cat_and_dog_speech('hund'))
 
     def test_element_in_list(self):
         self.assertTrue(element_in_list('purple', ['blue', 'purple', 'pink']))
         self.assertFalse(element_in_list('yellow', ['blue', 'purple', 'pink']))
 
-    def surface_of_triangle(grundseite, heohe):
-        self.assertTrue(100, surface_of_triangle(10,10))
-        self.assertFalse(1234,surface_of_triangle(4,5))
+    def test_surface_of_triangle(self):
+        self.assertEqual(50, surface_of_triangle(10,10))
+        self.assertEqual(10, surface_of_triangle(4,5))
 
 if __name__ == '__main__':
     unittest.main()

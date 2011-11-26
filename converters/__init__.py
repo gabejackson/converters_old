@@ -31,7 +31,7 @@ def usd_to_chf(usd):
     f = opener.open(req)
     data = json.loads(f.read())
     exchange_rate = data['rates']['CHF']
-    return 0
+    return usd*exchange_rate
 
 def lessons_to_minutes(lessons):
     ''' Returns the amount of minutes spent in lessons '''
@@ -71,3 +71,6 @@ def element_in_list(element, list):
     if element in list:
         return True
     return False
+
+def surface_of_triangle(grundlinie, hoehe):
+    return grundlinie*hoehe/2
