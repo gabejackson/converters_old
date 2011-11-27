@@ -55,6 +55,7 @@ class TestConverters(unittest.TestCase):
     def test_surface_of_triangle(self):
         self.assertEqual(50, surface_of_triangle(10,10))
         self.assertEqual(10, surface_of_triangle(4,5))
+        self.assertEqual(12.5, surface_of_triangle(5,5))
 
 if __name__ == '__main__':
     unittest.main()
