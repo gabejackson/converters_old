@@ -73,4 +73,4 @@ def element_in_list(element, list):
     return False
 
 def surface_of_triangle(grundlinie, hoehe):
-    return grundlinie*hoehe/2
+    return grundlinie*hoehe/2.0
